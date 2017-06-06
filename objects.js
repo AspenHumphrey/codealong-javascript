@@ -22,12 +22,16 @@ const member = song.bandMembers;
 for (var i = 0; i < member.length; i++) {
 	if ("lead" === member[i].roles.vocals) { 
 		document.write(`"${member[i].name} " is a lead singer on " ${song.album}"`);
+		console.log("blah",`"${member[i].name} " is a lead singer on " ${song.album}"`);
 	} else if ("background" === member[i].roles.vocals) {
 		document.write(`"${member[i].name}" is a background singer on "${song.album}"`);
+		console.log("ha",`"${member[i].name} " is a lead singer on " ${song.album}"`);
 	} else {
 		document.write(`"${member[i].name}" did not sing on "${song.album}"`);
+		console.log("ka", `"${member[i].name} " is a lead singer on " ${song.album}"`); 
 	};
 };
+
 
 // // const vocalRole = member.roles.vocals;
 // if (vocalRole) {
